@@ -97,16 +97,11 @@ namespace WindowsFormsAppFilmek
             }
         }
 
-        internal bool updateFilm(Filmek updateFilm)
+        internal bool updateFilmek(Filmek updateFilmek)
         {
-            cmd.CommandText = "UPDATE `filmek` SET `cim`= @cim,`megjelenes`= @megjelenes,`hossz`= @hossz,`ertekeles`= @ertekeles,`kategoria`= @kategoria WHERE `id`= @id";
+            cmd.CommandText = "UPDATE `filmek` SET `cim`= @cim,`megjelenes`= @megjelenes,`hossz`= @hossz,`ertekeles`= @ertekeles,`kategoria`= @kategoria WHERE `id`= @id;";
             cmd.Parameters.Clear();
-            cmd.Parameters.AddWithValue("@id", updateFilm);
-            cmd.Parameters.AddWithValue("@cim", updateFilm);
-            cmd.Parameters.AddWithValue("@megjelenes", updateFilm);
-            cmd.Parameters.AddWithValue("@hossz", updateFilm);
-            cmd.Parameters.AddWithValue("@ertekeles", updateFilm);
-            cmd.Parameters.AddWithValue("@kategoria", updateFilm);
+            cmd.Parameters.AddWithValue("@id", Program.updateFilm.textBox_id.Text);
             Open();
             if (cmd.ExecuteNonQuery() == 1)
             {

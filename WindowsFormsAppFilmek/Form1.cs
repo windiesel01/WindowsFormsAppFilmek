@@ -44,7 +44,7 @@ namespace WindowsFormsAppFilmek
 
         private void móositásToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Program.updateFilm.ShowDialog();
+            Program.formUpdateupdateFilmform.ShowDialog();
         }
     }
 }

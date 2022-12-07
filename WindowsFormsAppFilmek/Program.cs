@@ -16,8 +16,8 @@ namespace WindowsFormsAppFilmek
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            insertFilm= new FormInsertFilm();
-            updateFilm= new FormUpdateFilm();
+            insertFilm = new FormInsertFilm();
+            updateFilm = new FormUpdateFilm();
             form_Nyito = new Form_Nyito();
             Application.Run(form_Nyito);
         }
