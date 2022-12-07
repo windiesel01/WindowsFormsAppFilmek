@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppFilmek", "WindowsFormsAppFilmek\WindowsFormsAppFilmek.csproj", "{74C61A9B-F157-4EDA-9D43-54E5868A2980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74C61A9B-F157-4EDA-9D43-54E5868A2980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C61A9B-F157-4EDA-9D43-54E5868A2980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C61A9B-F157-4EDA-9D43-54E5868A2980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C61A9B-F157-4EDA-9D43-54E5868A2980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53001156-B620-458B-A804-A320F33AEC25}
+	EndGlobalSection
+EndGlobal
