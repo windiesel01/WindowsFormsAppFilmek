@@ -226,7 +226,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDeleteFilm";
-            this.Text = "FormDeleteFilm";
+            this.Text = "Form Törlése";
             this.Load += new System.EventHandler(this.FormDeleteFilm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_ertekeles)).EndInit();
             this.ResumeLayout(false);
