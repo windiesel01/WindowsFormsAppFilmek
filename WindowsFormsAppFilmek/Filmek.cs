@@ -34,7 +34,7 @@ namespace WindowsFormsAppFilmek
 
         public override string ToString()
         {
-            return $"{id}--{cim} [{megjelenes}] -({hossz}) - {ertekeles}/10 -- {kategoria}";
+            return $"{cim}  [{megjelenes}] - ({hossz}) - {ertekeles}/10 - {kategoria}";
         }
     }
 }

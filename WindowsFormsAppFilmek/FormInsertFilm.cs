@@ -85,5 +85,6 @@ namespace WindowsFormsAppFilmek
             }
             Program.form_Nyito.filmekUpdate();
         }
+
     }
 }

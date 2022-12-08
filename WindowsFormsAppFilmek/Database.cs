@@ -102,6 +102,30 @@ namespace WindowsFormsAppFilmek
             cmd.CommandText = "UPDATE `filmek` SET `cim`= @cim,`megjelenes`= @megjelenes,`hossz`= @hossz,`ertekeles`= @ertekeles,`kategoria`= @kategoria WHERE `id`= @id;";
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@id", Program.updateFilm.textBox_id.Text);
+            cmd.Parameters.AddWithValue("@cim", Program.updateFilm.textBox_cim.Text);
+            cmd.Parameters.AddWithValue("@megjelenes", Program.updateFilm.textBox_megjelenes.Text);
+            cmd.Parameters.AddWithValue("@hossz", Program.updateFilm.textBox_hossz.Text);
+            cmd.Parameters.AddWithValue("@ertekeles", Program.updateFilm.numericUpDown_ertekeles.Value);
+            cmd.Parameters.AddWithValue("@kategoria", Program.updateFilm.textBox_kategoria.Text);
+            
+            Open();
+            if (cmd.ExecuteNonQuery() == 1)
+            {
+                Close();
+                return true;
+            }
+            else
+            {
+                Close();
+                return false;
+            }
+        }
+
+        internal bool deleteFilmek(Filmek deleteFilmek) 
+        {
+            cmd.CommandText = "DELETE FROM `filmek` WHERE `id` = @id;";
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@id", Program.deleteFilm.textBox_id.Text);
             Open();
             if (cmd.ExecuteNonQuery() == 1)
             {

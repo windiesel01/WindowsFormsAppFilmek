@@ -115,6 +115,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteFilm.resx">
+      <DependentUpon>FormDeleteFilm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInsertFilm.resx">
       <DependentUpon>FormInsertFilm.cs</DependentUpon>
     </EmbeddedResource>
